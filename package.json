@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env PORT=10888 react-scripts start",
+    // "start": /"cross-env PORT=10888 react-scripts start",
+    "start": "node server.js",
     "build": "react-scripts build",
     "surge-deploy": "npm run build && surge ./build --domain kozodoi-club-hack.surge.sh"
   },
@@ -25,6 +26,9 @@
     "babel-eslint": "^10.0.3",
     "chalk": "^2.4.2",
     "core-js": "^3.1.4",
+    "express": "^4.17.1",
+    "express-favicon": "^2.0.1",
+    "path": "^0.12.7",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
